@@ -132,7 +132,7 @@ const Dashboard = () => {
                       </h2>
                     </Link>
                   </div>
-                  {/* show donner */}
+                  {/*add product */}
                   <div
                     onClick={() => setSelectedButton('Button d')}
                     className={
