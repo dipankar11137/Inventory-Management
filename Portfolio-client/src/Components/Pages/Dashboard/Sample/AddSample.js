@@ -24,13 +24,12 @@ const AddSample = () => {
       .then(imageData => {
         const image = imageData.data.url;
         const updateUrl = {
-          ...data,
-         
+          ...data,         
           img: image,
         };
 
         // console.log('aci', updateUrl);
-        fetch(`http://localhost:5000/products`, {
+        fetch(`http://localhost:5000/sample`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json',
@@ -39,11 +38,31 @@ const AddSample = () => {
         })
           .then(res => res.json())
           .then(data => {
-            toast.success('Add Product');
+            toast.success('Add Sample');
             reset();
           });
       });
   };
+
+  // const onSubmit = data => {
+  //      const updateUrl = {
+  //        ...data,
+  //        img: 'https://i.pinimg.com/236x/3e/c5/b6/3ec5b697bb5baf48ac485ff3cf7c37d1.jpg',
+  //      };
+  //   fetch(`http://localhost:5000/sample`, {
+  //     method: 'POST',
+  //     headers: {
+  //       'content-type': 'application/json',
+  //     },
+  //     body: JSON.stringify(updateUrl),
+  //   })
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       toast.success('Add sample');
+        
+  //     });
+  //  }
+
   return (
     <div>
       <div>

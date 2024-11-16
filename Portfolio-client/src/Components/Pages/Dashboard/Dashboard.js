@@ -5,6 +5,7 @@ import {
   FaCartPlus,
   FaLuggageCart,
   FaOpencart,
+  FaPlusSquare,
   FaQrcode
 } from 'react-icons/fa';
 
@@ -178,7 +179,7 @@ const Dashboard = () => {
                       className={`  group flex items-center text-xl w-[215px] gap-3.5 font-medium p-2  hover:bg-white  hover:text-black rounded-md`}
                     >
                       <div>
-                        {React.createElement(FaCartPlus, {
+                        {React.createElement(FaPlusSquare, {
                           size: '24',
                         })}
                       </div>

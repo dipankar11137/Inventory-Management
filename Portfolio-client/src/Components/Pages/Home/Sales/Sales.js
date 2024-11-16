@@ -196,14 +196,14 @@ const Sales = () => {
 
               {category && pType ? (
                 <input
-                  className="btn btn-orange-500 w-full text-white"
+                  className="btn btn-primary w-full text-white"
                   type="submit"
                   value="ADD"
                 />
               ) : (
                 <input
                   disabled
-                  className="btn btn-orange-500 w-full text-white tooltip"
+                  className="btn btn-primary w-full text-white tooltip"
                   type="submit"
                   value="ADD"
                   data-tip="hello"

@@ -8,7 +8,7 @@ const SampleProducts = () => {
 
 
    useEffect(() => {
-     fetch(`http://localhost:5000/products`)
+     fetch(`http://localhost:5000/sample`)
        .then(res => res.json())
        .then(data => {
          setProduct(data);
@@ -21,7 +21,7 @@ const SampleProducts = () => {
       </div>
 
       <div className="grid grid-cols-5 gap-4">
-        {products.slice(0, 10).map(product => (
+        {products.slice(-5).reverse().map(product => (
           <SampleProduct key={product._id} product={product} user={user[0]}/>
         ))}
       </div>
