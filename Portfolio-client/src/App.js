@@ -14,6 +14,7 @@ import ManageBuys from "./Components/Pages/Dashboard/Manage Buy/ManageBuys";
 import MyOrders from "./Components/Pages/Dashboard/My Order/MyOrders";
 import Payment from "./Components/Pages/Dashboard/My Order/Payment";
 import AddSample from "./Components/Pages/Dashboard/Sample/AddSample";
+import ShowSample from "./Components/Pages/Dashboard/Sample/ShowSample";
 import BuyNow from "./Components/Pages/Home/Buy/BuyNow";
 import Buys from "./Components/Pages/Home/Buy/Buys";
 import ProductCategory from "./Components/Pages/Home/Buy/ProductCategory";
@@ -84,6 +85,7 @@ function App() {
           <Route path="manageBuy" element={<ManageBuys />} />
           <Route path="myOrder" element={<MyOrders />} />
           <Route path="addSample" element={<AddSample />} />
+          <Route path="showSample" element={<ShowSample />} />
           <Route path="payment/:id" element={<Payment />}></Route>
         </Route>
         {/* Dashboard End */}

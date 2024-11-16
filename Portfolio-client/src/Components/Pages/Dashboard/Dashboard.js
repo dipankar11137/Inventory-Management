@@ -3,10 +3,11 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import {
   FaCartArrowDown,
   FaCartPlus,
+  FaEye,
   FaLuggageCart,
   FaOpencart,
   FaPlusSquare,
-  FaQrcode
+  FaQrcode,
 } from 'react-icons/fa';
 
 import { Link, Outlet, useLocation } from 'react-router-dom';
@@ -192,6 +193,37 @@ const Dashboard = () => {
                         }`}
                       >
                         Add Sample
+                      </h2>
+                    </Link>
+                  </div>
+                  {/* my buy*/}
+                  <div
+                    onClick={() => setSelectedButton('Button show')}
+                    className={
+                      selectedButton === 'Button show'
+                        ? 'bg-white text-black w-60 rounded-lg'
+                        : ''
+                    }
+                  >
+                    {' '}
+                    <Link
+                      to="/dashboard/showSample"
+                      className={`  group flex items-center text-xl w-[215px] gap-3.5 font-medium p-2  hover:bg-white  hover:text-black rounded-md`}
+                    >
+                      <div>
+                        {React.createElement(FaEye, {
+                          size: '24',
+                        })}
+                      </div>
+                      <h2
+                        style={{
+                          transitionDelay: `${0 + 3}00ms`,
+                        }}
+                        className={`whitespace-pre duration-500 ${
+                          !open && 'opacity-0 translate-x-28 overflow-hidden '
+                        }`}
+                      >
+                       Show Sample
                       </h2>
                     </Link>
                   </div>
