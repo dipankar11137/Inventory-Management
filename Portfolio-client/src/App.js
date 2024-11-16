@@ -13,6 +13,7 @@ import DashboardIndex from "./Components/Pages/Dashboard/Dashboard Index/Dashboa
 import ManageBuys from "./Components/Pages/Dashboard/Manage Buy/ManageBuys";
 import MyOrders from "./Components/Pages/Dashboard/My Order/MyOrders";
 import Payment from "./Components/Pages/Dashboard/My Order/Payment";
+import AddSample from "./Components/Pages/Dashboard/Sample/AddSample";
 import BuyNow from "./Components/Pages/Home/Buy/BuyNow";
 import Buys from "./Components/Pages/Home/Buy/Buys";
 import ProductCategory from "./Components/Pages/Home/Buy/ProductCategory";
@@ -78,11 +79,11 @@ function App() {
           }
         >
           <Route index element={<DashboardIndex />} />
-          {/* <Route index element={<MyProducts />} /> */}
           <Route path="allProduct" element={<AllProducts />} />
           <Route path="addProduct" element={<Sales />} />
           <Route path="manageBuy" element={<ManageBuys />} />
           <Route path="myOrder" element={<MyOrders />} />
+          <Route path="addSample" element={<AddSample />} />
           <Route path="payment/:id" element={<Payment />}></Route>
         </Route>
         {/* Dashboard End */}

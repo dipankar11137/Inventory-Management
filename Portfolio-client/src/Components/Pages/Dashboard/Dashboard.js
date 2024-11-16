@@ -163,6 +163,37 @@ const Dashboard = () => {
                       </h2>
                     </Link>
                   </div>
+                  {/*add sample */}
+                  <div
+                    onClick={() => setSelectedButton('Button s')}
+                    className={
+                      selectedButton === 'Button s'
+                        ? 'bg-white text-black w-60 rounded-lg'
+                        : ''
+                    }
+                  >
+                    {' '}
+                    <Link
+                      to="/dashboard/addSample"
+                      className={`  group flex items-center text-xl w-[215px] gap-3.5 font-medium p-2  hover:bg-white  hover:text-black rounded-md`}
+                    >
+                      <div>
+                        {React.createElement(FaCartPlus, {
+                          size: '24',
+                        })}
+                      </div>
+                      <h2
+                        style={{
+                          transitionDelay: `${0 + 3}00ms`,
+                        }}
+                        className={`whitespace-pre duration-500 ${
+                          !open && 'opacity-0 translate-x-28 overflow-hidden '
+                        }`}
+                      >
+                        Add Sample
+                      </h2>
+                    </Link>
+                  </div>
                   {/* my buy*/}
                   <div
                     onClick={() => setSelectedButton('Button 5')}
