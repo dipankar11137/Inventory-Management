@@ -59,28 +59,42 @@ const DashboardIndex = () => {
   
   return (
     <div>
-      <div>
-        <h1 className="text-center text-4xl py-3 mt-[1px]  font-semibold text-indigo-50 bg-slate-600">
+      <div className="shadow-md flex items-center gap-7">
+        <h1 className="pl-20 text-4xl py-3 mt-[1px]  font-semibold text-secondary">
           Our Dashboard
         </h1>
+        <img
+          className='h-16 w-16'
+          src="https://media.lordicon.com/icons/wired/lineal/230-arrow-big-right.gif"
+          alt=""
+        />
+        <hr />
       </div>
-      <div className="grid grid-cols-4 px-10 py-10 gap-10">
-        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-lime-200">
-          <h1 className="text-4xl font-bold text-indigo-900">
+      <div className="grid grid-cols-4 px-10 py-10 gap-10 text-indigo-100">
+        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-secondary">
+          <h1 className="text-4xl font-bold text-indigo-100">
             {totalProductQuantity}
           </h1>
           <h1 className="text-xl font-semibold mt-2">Total Product</h1>
         </div>
-        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-indigo-200">
-          <h1 className="text-4xl font-bold text-indigo-900"> ৳ {totalProductPrice}</h1>
+        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-primary">
+          <h1 className="text-4xl font-bold text-indigo-100">
+            {' '}
+            ৳ {totalProductPrice}
+          </h1>
           <h1 className="text-xl font-semibold mt-2">Total Price</h1>
         </div>
-        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-cyan-200">
-          <h1 className="text-4xl font-bold text-indigo-900">{totalBuyProductQuantity}</h1>
+        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-cyan-900">
+          <h1 className="text-4xl font-bold text-indigo-100">
+            {totalBuyProductQuantity}
+          </h1>
           <h1 className="text-xl font-semibold mt-2">Buy Product</h1>
         </div>
-        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-green-200">
-          <h1 className="text-4xl font-bold text-indigo-900"> ৳ {totalBuyProductPrice}</h1>
+        <div className=" border-slate-600 py-7 rounded-lg shadow-lg text-center bg-green-900">
+          <h1 className="text-4xl font-bold text-indigo-100">
+            {' '}
+            ৳ {totalBuyProductPrice}
+          </h1>
           <h1 className="text-xl font-semibold mt-2">Buy Price</h1>
         </div>
       </div>

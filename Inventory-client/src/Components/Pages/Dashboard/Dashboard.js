@@ -45,22 +45,22 @@ const Dashboard = () => {
               <div
                 className={` ${
                   open ? 'w-60' : 'w-20 '
-                } bg-secondary h-screen p-5  text-white pt-8 relative duration-300`}
+                } bg-primary h-screen p-5  text-white pt-8 relative duration-300`}
               >
                 <img
                   src="https://cdn.pixabay.com/photo/2012/04/11/17/14/left-28998_1280.png"
-                  className={`absolute cursor-pointer -right-3 top-9 w-7
+                  className={`absolute cursor-pointer -right-3 top-9 w-7 
              border-2 rounded-full  ${!open && 'rotate-180'}`}
                   onClick={() => setOpen(!open)}
                   alt=""
                 />
-                <div className="flex gap-x-4 items-center">
+                <div className="flex gap-x-4 items-center ">
                   <div onClick={() => setSelectedButton('Button 10')}>
                     {' '}
                     <Link to={'/dashboard'}>
                       {' '}
                       <img
-                        src="https://www.svgrepo.com/download/7869/settings.svg"
+                        src="https://www.freeiconspng.com/uploads/dashboard-icon-2.png"
                         className={`cursor-pointer duration-500 rounded-full ${
                           open && 'rotate-[360deg] h-20  '
                         }`}
@@ -223,7 +223,7 @@ const Dashboard = () => {
                           !open && 'opacity-0 translate-x-28 overflow-hidden '
                         }`}
                       >
-                       Show Sample
+                        Show Sample
                       </h2>
                     </Link>
                   </div>
